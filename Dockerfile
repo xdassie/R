@@ -1,4 +1,4 @@
-FROM centos:7
+FROM centos:8
 RUN yum -y update && yum -y install epel-release && yum clean all
 RUN yum -y install R && yum clean all
 RUN  yum -y install libcurl-devel && \
