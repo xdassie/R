@@ -1,9 +1,5 @@
-FROM centos:7.7.1908
-RUN yum -y update && yum -y install epel-release && yum clean all
-RUN yum -y install R && yum clean all
-RUN  yum -y install libcurl-devel && \
-	 yum -y install openssl-devel && \
-	 yum -y install libxml2-devel && \
-     yum clean all
+FROM ubuntu:20.04
+RUN apt-get -y update && apt-get -y upgrade
+RUN apt-get install r-base
+RUN apt-get -y install r-base
 RUN R --version
-
