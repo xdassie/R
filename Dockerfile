@@ -6,7 +6,7 @@ FROM centos:8
 #	 yum -y install libxml2-devel && \
 #     yum clean all
 
-RUN  yum -y update && yum -y upgrade && yum -y install chromium-browser && yum -y group install "Development tools" && \
+RUN  yum -y update && yum -y upgrade  && yum -y group install "Development tools" && \
  yum -y install readline-devel && \
  yum -y install xz xz-devel  && \
  yum -y install pcre pcre-devel && \
