@@ -7,15 +7,15 @@ FROM centos:8
 #     yum clean all
 
 RUN  yum -y group install "Development tools" && \
- yum install readline-devel && \
- yum install xz xz-devel  && \
- yum install pcre pcre-devel && \
- yum install libcurl-devel && \
- yum install texlive && \
- yum install java-1.8.0-openjdk && \
- yum install *gfortran* && \
- yum install zlib* && \
-yum install bzip2-*
+ yum -y install readline-devel && \
+ yum -y install xz xz-devel  && \
+ yum -y install pcre pcre-devel && \
+ yum -y install libcurl-devel && \
+ yum -y install texlive && \
+ yum -y install java-1.8.0-openjdk && \
+ yum -y install *gfortran* && \
+ yum -y install zlib* && \
+yum -y install bzip2-*
 
 RUN mkdir /R
 RUN adduser ruser
