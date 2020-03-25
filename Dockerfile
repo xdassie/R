@@ -15,7 +15,7 @@ RUN  yum -y update && yum -y group install "Development tools" && \
  yum -y install java-1.8.0-openjdk && \
  yum -y install *gfortran* && \
  yum -y install zlib* && \
-yum -y install bzip2-* &&  yum -y upgrade && yum -y remove chromium-browser
+yum -y install bzip2-* &&  yum -y upgrade && yum -y remove chromium
 
 RUN mkdir /R
 RUN adduser ruser
