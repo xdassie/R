@@ -6,7 +6,7 @@ FROM centos:8
 #	 yum -y install libxml2-devel && \
 #     yum clean all
 
-RUN  yum group install "Development tools" && \
+RUN  yum -y group install "Development tools" && \
  yum install readline-devel && \
  yum install xz xz-devel  && \
  yum install pcre pcre-devel && \
