@@ -1,7 +1,7 @@
 FROM ubuntu:20.04
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get -y update && apt-get -y upgrade
-RUN apt-get -y install wget libssl-dev libcurl3 r-base
+RUN apt-get -y install wget libcurl4-openssl-dev libv8-3.14-dev r-base
 RUN R --version
 
 RUN mkdir /R
